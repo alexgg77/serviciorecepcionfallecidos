@@ -1,26 +1,4 @@
 spring:
-    datasource:
-        driver-class-name: oracle.jdbc.OracleDriver # Enable to ORACLE
-        #driverClassName: com.mysql.cj.jdbc.Driver # mysql
-        # url: ${BD_URL:jdbc:mysql://192.168.79.66/certificaciones} # mysql
-        url: jdbc:oracle:thin:@//100.100.1.102/DESA
-        username: RNPSOLICITUD
-        password: lafacil
-        # driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver #Enable to SQL SERVER
-        initialization-mode: always
-        
-    jpa:
-        database-platform: org.hibernate.dialect.Oracle10gDialect #Enable to Oracle
-        show-sql: true
-        hibernate:
-            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-        properties:
-            hibernate:
-              format_sql: true
-              use_sql_comments: true
-              synonyms: true
-              #dialect: org.hibernate.dialect.SQLServer2012Dialect # Enable to SQL SERVER
-              #dialect: org.hibernate.dialect.MySQL5InnoDBDialect #mysql 
                 
     security:
       oauth2:
